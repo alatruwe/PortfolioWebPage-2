@@ -1,6 +1,7 @@
 /* mobile view < 600px */
 body {
   background-color: #EAF1F5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* header and footer  */
@@ -11,7 +12,7 @@ header, footer {
 }
 
 header p, footer p {
-  font-family: Marker Felt, fantasy;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   text-align: center;
 }
@@ -29,7 +30,7 @@ footer nav ul {
 
 footer nav ul li a {
   color: #A0C1D1;
-  font-family: Marker Felt, fantasy;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-decoration: none;
   margin: 0 20px 0 0;
@@ -43,10 +44,6 @@ main {
 img {
   width: 100%;
   border-radius: 10px;
-}
-
-.home-photo {
-  margin-bottom: 15px;
 }
 
 .wrapper {
@@ -70,7 +67,13 @@ img {
 
 /* text  */
 .text-title {
-  font-size: 25px;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
 
 .text-details {
@@ -86,6 +89,7 @@ img {
 
 /* deskstop view > 600px */
 @media all and (min-width: 600px) {
+
   /* header  */
   header {
     display: flex;
@@ -97,25 +101,40 @@ img {
     margin: 14px 0;
     padding-top: 0;
   }
+
   /* main content  */
   .group {
     flex-direction: row;
     margin-bottom: 25px;
+    padding-top: 25px;
   }
 
   .item {
-  margin: 15px;
-  flex: 1;
+    margin: 15px;
+    flex: 1;
   }
 
   .item-double {
     flex: 2 ;
   }
 
+  .home-photo {
+    margin-bottom: 15px;
+  }
+
   .picture {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .text-title {
+    margin-top: 0;
+  }
+
+  .portfolio {
+    margin-left: 16px;
+    margin-bottom: 0;
   }
 
   /* footer  */
